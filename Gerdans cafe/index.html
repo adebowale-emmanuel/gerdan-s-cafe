@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="cafe.js"></script>
+    <title>Gerdan's Café — The Scent of Adlershof</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ════ NAVIGATION ════ -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo">Gerdan<span>'s</span></a>
+      <ul class="nav-links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#atmosphere">Atmosphere</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+      <a href="#menu" class="nav-cta">View Menu</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- ════ HERO ════ -->
+    <section class="hero" id="home">
+      <div class="hero-video-bg">
+        <div class="hero-img">
+          <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1800&q=90&auto=format&fit=crop&crop=center"
+            alt="Gerdan's Café — The Scent of Adlershof"
+          />
+        </div>
+        <div class="hero-canvas"></div>
+        <div class="steam-container">
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <span class="hero-eyebrow"
+          >✦ Adlershof, Berlin · Est. with passion ✦</span
+        >
+        <h1 class="hero-title">
+          GERDAN<span class="hero-colon">'</span>S<br /><em>THE SCENT</em
+          ><br />OF ADLERSHOF.
+        </h1>
+        <p class="hero-subtitle-line">
+          Boutique Bagels. Signature Couscous. Soulful Coffee.
+        </p>
+        <p class="hero-descriptor">
+          Experience the high-quality goodness you can smell before you even
+          enter. Next to the university — worlds away from the ordinary.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-gold">Explore the Menu</a>
+          <a href="#visit" class="btn-outline">Order Takeaway</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ════ DIVIDER ════ -->
+    <div class="gold-divider">
+      <span class="gold-divider-icon">✦ &nbsp; ✦ &nbsp; ✦</span>
+    </div>
+
+    <!-- ════ SENSORY STORY ════ -->
+    <section class="sensory" id="story">
+      <div class="sensory-inner">
+        <div class="sensory-visual">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=85&auto=format&fit=crop"
+            alt="Fresh premium ingredients at Gerdan's Café"
+            loading="lazy"
+          />
+        </div>
+        <div class="sensory-text">
+          <span class="section-eyebrow reveal">✦ Our Philosophy</span>
+          <div class="line-accent"></div>
+          <p class="sensory-quote reveal reveal-delay-1">
+            "Next to the university, but worlds away from the ordinary."
+          </p>
+          <p class="sensory-body reveal reveal-delay-2">
+            At Gerdan's, we believe luxury isn't a price point — it's the
+            satisfying crunch of a fresh-baked bagel, the warmth of spices
+            drifting into the street, and the genuine smile of someone who cares
+            about your meal. Your daily escape, perfected. A boutique culinary
+            refuge in the heart of Adlershof.
+          </p>
+          <div class="sensory-stats reveal reveal-delay-3">
+            <div class="stat-item">
+              <span class="stat-number">4.3</span>
+              <span class="stat-label">Google Rating</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">★★★★</span>
+              <span class="stat-label">Wall of Love</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Fresh, Daily</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ SIGNATURE COLLECTIONS ════ -->
+    <section class="collections" id="collections">
+      <div class="collections-header reveal">
+        <span class="section-eyebrow">✦ Signature Collections</span>
+        <div class="line-accent center"></div>
+        <h2 class="section-title">
+          Crafted with <em>Obsession.</em><br />Priced with Humanity.
+        </h2>
+      </div>
+      <div class="collections-grid">
+        <div class="collection-card card-bagel reveal">
+          <div class="collection-hover-bar"></div>
+          <div class="collection-visual">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85&auto=format&fit=crop&crop=center"
+              alt="Artisan Bagel — Gerdan's Café"
+              loading="lazy"
+            />
+          </div>
+          <div class="collection-info">
+            <span class="collection-number">01 ── Collection</span>
+            <h3 class="collection-name">The Artisan<br />Bagel</h3>
+            <p class="collection-desc">
+              Hand-prepared, stone-baked, and filled with premium ingredients
+              selected for flavour. Every bite a deliberate act of craft —
+              toasted to the exact moment of perfection.
+            </p>
+            <div class="collection-tags">
+              <span class="tag">Smoked Salmon</span>
+              <span class="tag">Toasted Sesame</span>
+              <span class="tag">Premium Fillings</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collection-card card-couscous reveal reveal-delay-1">
+          <div class="collection-hover-bar"></div>
+          <div class="collection-visual">
+            <img
+              src="https://images.unsplash.com/photo-1512058454905-6b841e7ad132?w=800&q=85&auto=format&fit=crop&crop=center"
+              alt="Signature Couscous Bowl — Gerdan's Café"
+              loading="lazy"
+            />
+          </div>
+          <div class="collection-info">
+            <span class="collection-number">02 ── Signature</span>
+            <h3 class="collection-name">The Couscous<br />Bowl</h3>
+            <p class="collection-desc">
+              A symphony of warm spices and fresh textures. Our most-loved
+              creation — a smoked paprika infusion balanced with vibrant herbs
+              and earthy depth. The bowl that started the conversation.
+            </p>
+            <div class="collection-tags">
+              <span class="tag">Smoked Paprika</span>
+              <span class="tag">Fresh Herbs</span>
+              <span class="tag">Most Loved</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collection-card card-brew reveal reveal-delay-2">
+          <div class="collection-hover-bar"></div>
+          <div class="collection-visual">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=85&auto=format&fit=crop&crop=center"
+              alt="The Daily Brew — Gerdan's Café"
+              loading="lazy"
+            />
+          </div>
+          <div class="collection-info">
+            <span class="collection-number">03 ── Daily Ritual</span>
+            <h3 class="collection-name">The Daily<br />Brew</h3>
+            <p class="collection-desc">
+              High-quality beans meet expert technique. A golden crema, a
+              velvety body, and the kind of warmth that sets the tone for your
+              entire morning. The fuel for Adlershof's brightest minds.
+            </p>
+            <div class="collection-tags">
+              <span class="tag">Golden Crema</span>
+              <span class="tag">Single Origin</span>
+              <span class="tag">Expert Technique</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ MENU PREVIEW ════ -->
+    <section class="menu-preview" id="menu">
+      <div class="menu-header reveal">
+        <span class="section-eyebrow">✦ The Menu</span>
+        <div class="line-accent center"></div>
+        <h2 class="section-title">
+          <em>Sensory</em> Language.<br />Honest Prices.
+        </h2>
+        <p
+          style="
+            font-size: 0.78rem;
+            color: var(--oat-dim);
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.8;
+          "
+        >
+          Every description is written to awaken your appetite before the first
+          bite. Hover to explore.
+        </p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-left">
+            <p class="menu-item-name">The Gerdan Classic Bagel</p>
+            <p class="menu-item-desc">
+              Stone-baked, cream cheese, Smoked Salmon, Toasted Sesame Crunch,
+              fresh dill.
+            </p>
+            <span class="menu-item-tag">Signature</span>
+          </div>
+          <span class="menu-item-price">€7.50</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-left">
+            <p class="menu-item-name">Smoked Paprika Couscous Bowl</p>
+            <p class="menu-item-desc">
+              Warm-spiced couscous, roasted vegetables, fresh herbs, golden
+              citrus drizzle.
+            </p>
+            <span class="menu-item-tag">Most Loved</span>
+          </div>
+          <span class="menu-item-price">€8.90</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-left">
+            <p class="menu-item-name">Avocado & Za'atar Bagel</p>
+            <p class="menu-item-desc">
+              Slow-ripened avocado, Za'atar herb blend, heirloom tomatoes,
+              chilli flake finish.
+            </p>
+            <span class="menu-item-tag">Vegan</span>
+          </div>
+          <span class="menu-item-price">€7.00</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-left">
+            <p class="menu-item-name">Cortado — The Precision Pull</p>
+            <p class="menu-item-desc">
+              A balanced double ristretto, steamed milk micro-foam, golden crema
+              preserved.
+            </p>
+            <span class="menu-item-tag">Barista's Choice</span>
+          </div>
+          <span class="menu-item-price">€3.20</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-left">
+            <p class="menu-item-name">The Morning Ritual — Latte</p>
+            <p class="menu-item-desc">
+              Silky whole milk, single-origin espresso, dusted with cinnamon. A
+              ceremony in a cup.
+            </p>
+            <span class="menu-item-tag">Daily Brew</span>
+          </div>
+          <span class="menu-item-price">€3.80</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-3">
+          <div class="menu-item-left">
+            <p class="menu-item-name">Garden Herb Couscous</p>
+            <p class="menu-item-desc">
+              Cucumber, mint, pomegranate, roasted peppers, tahini, lemon zest
+              infusion.
+            </p>
+            <span class="menu-item-tag">Vegan · Fresh</span>
+          </div>
+          <span class="menu-item-price">€8.50</span>
+        </div>
+      </div>
+      <div class="menu-cta reveal">
+        <a href="#visit" class="btn-gold">Order Takeaway</a>
+        &nbsp;&nbsp;
+        <a href="#visit" class="btn-outline">Full Menu PDF</a>
+      </div>
+    </section>
+
+    <!-- ════ WALL OF LOVE ════ -->
+    <section class="reviews" id="reviews">
+      <div class="reviews-header reveal">
+        <span class="stars">★★★★★</span>
+        <span class="section-eyebrow">✦ The Wall of Love</span>
+        <div class="line-accent center"></div>
+        <h2 class="section-title">What Adlershof<br /><em>Is Saying.</em></h2>
+      </div>
+      <div class="reviews-carousel reveal">
+        <div class="reviews-track" id="reviewsTrack">
+          <div class="review-card">
+            <p class="review-text">
+              "You can smell the goodness of high quality food when you are
+              waiting to order. It is absolutely worth going there!"
+            </p>
+            <div class="review-meta">
+              <div class="reviewer-avatar">M</div>
+              <div>
+                <span class="reviewer-name">Mahdieh S.</span>
+                <span class="reviewer-source">Google Review · ★★★★★</span>
+              </div>
+              <span class="review-stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review-text">
+              "Everything is so yummy — fresh, honest, made with care.
+              Affordable prices for genuinely good food. A hidden gem in
+              Adlershof."
+            </p>
+            <div class="review-meta">
+              <div class="reviewer-avatar">S</div>
+              <div>
+                <span class="reviewer-name">Solon T.</span>
+                <span class="reviewer-source">Google Review · ★★★★★</span>
+              </div>
+              <span class="review-stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review-text">
+              "The couscous bowl is genuinely exceptional. Flavours that feel
+              considered, textures that surprise you. I come back every week
+              without question."
+            </p>
+            <div class="review-meta">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <span class="reviewer-name">Anna K.</span>
+                <span class="reviewer-source">Google Review · ★★★★★</span>
+              </div>
+              <span class="review-stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review-text">
+              "Best coffee near the university. Period. The team is warm and the
+              space gives you a moment of genuine calm in a busy day. Luxurious
+              in the best sense."
+            </p>
+            <div class="review-meta">
+              <div class="reviewer-avatar">L</div>
+              <div>
+                <span class="reviewer-name">Lukas M.</span>
+                <span class="reviewer-source">Google Review · ★★★★★</span>
+              </div>
+              <span class="review-stars">★★★★★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="prevReview()">&#8592;</button>
+        <div class="carousel-dots" id="carouselDots">
+          <div class="dot active" onclick="goToReview(0)"></div>
+          <div class="dot" onclick="goToReview(1)"></div>
+          <div class="dot" onclick="goToReview(2)"></div>
+          <div class="dot" onclick="goToReview(3)"></div>
+        </div>
+        <button class="carousel-btn" onclick="nextReview()">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- ════ ATMOSPHERE ════ -->
+    <section class="atmosphere" id="atmosphere">
+      <div class="atm-header reveal">
+        <div>
+          <span class="section-eyebrow">✦ The Atmosphere</span>
+          <div class="line-accent"></div>
+          <h2 class="section-title">Your Quiet<br /><em>Luxury Escape.</em></h2>
+        </div>
+        <p
+          style="
+            font-size: 0.75rem;
+            color: var(--oat-dim);
+            max-width: 320px;
+            line-height: 1.9;
+          "
+        >
+          A space designed for the moments between moments. Whether a meeting, a
+          study break, or a solo ritual — Gerdan's holds space for you.
+        </p>
+      </div>
+      <div class="atm-grid">
+        <div class="atm-cell reveal">
+          <div class="atm-visual">
+            <img
+              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=900&q=85&auto=format&fit=crop&crop=center"
+              alt="Gerdan's Café — The Interior"
+              loading="lazy"
+            />
+            <div class="atm-label">The Interior</div>
+          </div>
+        </div>
+        <div class="atm-cell reveal reveal-delay-1">
+          <div class="atm-visual">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=85&auto=format&fit=crop&crop=center"
+              alt="Morning coffee at Gerdan's"
+              loading="lazy"
+            />
+            <div class="atm-label">Morning Light</div>
+          </div>
+        </div>
+        <div class="atm-cell reveal reveal-delay-2">
+          <div class="atm-visual">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=85&auto=format&fit=crop&crop=entropy"
+              alt="The detail — Gerdan's espresso"
+              loading="lazy"
+            />
+            <div class="atm-label">The Detail</div>
+          </div>
+        </div>
+        <div class="atm-cell reveal reveal-delay-1">
+          <div class="atm-visual">
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=85&auto=format&fit=crop&crop=center"
+              alt="Study space at Gerdan's Café"
+              loading="lazy"
+            />
+            <div class="atm-label">Study Space</div>
+          </div>
+        </div>
+        <div class="atm-cell reveal reveal-delay-2">
+          <div class="atm-visual">
+            <img
+              src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=700&q=85&auto=format&fit=crop&crop=center"
+              alt="The ritual — Gerdan's latte art"
+              loading="lazy"
+            />
+            <div class="atm-label">The Ritual</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ FOOTER / DIGITAL CONCIERGE ════ -->
+    <footer id="visit">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Gerdan<span>'s</span></a>
+          <p class="footer-brand-desc">
+            Boutique bagels, signature couscous, and soulful coffee in the heart
+            of Adlershof, Berlin. Where quality meets community — every single
+            day.
+          </p>
+          <div class="footer-social">
+            <div class="social-btn">in</div>
+            <div class="social-btn">ig</div>
+            <div class="social-btn">fb</div>
+            <div class="social-btn">g</div>
+          </div>
+        </div>
+        <div>
+          <span class="footer-col-title">Navigate</span>
+          <ul class="footer-links">
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#menu">The Menu</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#atmosphere">Atmosphere</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-col-title">Opening Hours</span>
+          <ul class="footer-links">
+            <li><a href="#">Monday — 09:00–17:00</a></li>
+            <li><a href="#">Tuesday — 09:00–17:00</a></li>
+            <li><a href="#">Wednesday — 09:00–17:00</a></li>
+            <li><a href="#">Thursday — 09:00–17:00</a></li>
+            <li><a href="#">Friday — 09:00–17:00</a></li>
+            <li
+              style="
+                color: var(--oat-dim);
+                font-size: 0.7rem;
+                margin-top: 8px;
+                padding-left: 0;
+                list-style: none;
+              "
+            >
+              Sat–Sun: Closed
+            </li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-col-title">Find Us</span>
+          <div class="footer-info-item">
+            <span class="footer-info-icon">◈</span>
+            <div class="footer-info-text">
+              <strong>Address</strong>
+              Newtonstraße 16<br />12489 Berlin, Adlershof
+            </div>
+          </div>
+          <div class="footer-info-item">
+            <span class="footer-info-icon">◈</span>
+            <div class="footer-info-text">
+              <strong>Near</strong>
+              Humboldt University Campus<br />S-Bahn Adlershof
+            </div>
+          </div>
+          <div class="footer-info-item">
+            <span class="footer-info-icon">◈</span>
+            <div class="footer-info-text">
+              <strong>Call Us</strong>
+              <a href="tel:+" style="color: var(--gold); text-decoration: none"
+                >Add your number</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-map-section">
+        <span class="section-eyebrow">✦ Find Gerdan's</span>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0!2d13.5315!3d52.4315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNewtonstra%C3%9Fe+16%2C+12489+Berlin!5e0!3m2!1sen!2sde!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Gerdan's Café Location"
+          >
+          </iframe>
+        </div>
+        <p
+          style="
+            font-size: 0.65rem;
+            color: var(--oat-dim);
+            margin-top: 12px;
+            letter-spacing: 0.05em;
+          "
+        >
+          Newtonstraße 16, 12489 Berlin · 2 min walk from S-Bahn Adlershof
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Gerdan's Café, Berlin. Crafted with obsession.</p>
+        <p>Newtonstraße 16 · 12489 Berlin · <a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+
+    <!-- ════ STICKY MOBILE CTA ════ -->
+    <div class="sticky-cta" id="stickyCta">
+      <a href="#menu" class="btn-gold">Explore Menu</a>
+      <a href="#visit" class="btn-outline">Order Takeaway</a>
+    </div>
+  </body>
+</html>
